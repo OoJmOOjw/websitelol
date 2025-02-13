@@ -1,0 +1,96 @@
+html,
+body {
+    height: 100%;
+    margin: 0;
+    background-image: url('images/background.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.container {
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.valentines {
+    padding: 50px;
+    margin: 0;
+    background-color: pink;
+    border: 5px hotpink solid;
+    border-radius: 30px;
+    font-family: "Sour Gummy", serif;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    animation: none;
+}
+
+h1 {
+    font-size: 2.5vw;
+}
+
+.buttons {
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+    justify-content: center;
+}
+
+.btn {
+    padding: 20px 40px;
+    font-size: 2rem;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    font-family: "Sour Gummy", serif;
+}
+
+.yes {
+    background-color: green;
+    color: white;
+}
+
+.no {
+    background-color: red;
+    color: white;
+}
+
+#yipText {
+    display: none;
+    font-size: 5vw;
+    font-weight: bold;
+    color: transparent;
+    background: linear-gradient(to left, red, orange, yellow, green, blue, indigo, violet);
+    -webkit-background-clip: text;
+    text-align: center;
+    margin-top: 20px;
+}
+
+@keyframes rainbowText {
+    0% {
+        background-position: 0%;
+    }
+
+    100% {
+        background-position: 100%;
+    }
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.05);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
